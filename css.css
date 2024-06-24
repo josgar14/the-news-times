@@ -1,0 +1,105 @@
+/* * {
+  box-sizing: border-box;
+} */
+h1 {
+  font-family: "Playwrite ES";
+  font-size: 100px;
+}
+h2 {
+  font-family: "Playwrite ES";
+  text-align: center;
+  font-size: 30px;
+}
+
+body {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+section {
+  padding: 30px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 35px;
+  color: darkgrey;
+}
+
+li {
+  font-family: "Anton";
+  list-style-type: none;
+  display: inline;
+  padding: 50px;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+ul {
+  text-align: center;
+}
+
+.title {
+  grid-area: title;
+  text-align: center;
+}
+
+.header {
+  grid-area: header;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+
+.section1 {
+  grid-area: section1;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-right: none;
+  border-bottom: 3px solid black;
+}
+.section2 {
+  grid-area: section2;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-right: none;
+  border-bottom: 3px solid black;
+  text-align: center;
+}
+
+.section2 p {
+  text-align: left;
+}
+.section3 {
+  grid-area: section3;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+}
+.section4 {
+  grid-area: section4;
+  border-top: none;
+  border-left: 3px solid black;
+  border-right: none;
+  border-bottom: 3px solid black;
+}
+.section5 {
+  grid-area: section5;
+  border-top: none;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.my-page {
+  display: grid;
+  grid-template-areas:
+    "title title title"
+    "header  header  header"
+    "section1  section2 section3"
+    "section4 section5 section5";
+}
